@@ -82,6 +82,22 @@ python runner.py
 
 ![F1-1](https://i.ibb.co/bJFzKJz/Captura-de-pantalla-2023-12-14-a-la-s-12-07-33-p-m.png)
 
+To use the book creation and deletion services, authentication is required:
+
+- `/books/create`
+- `/books/delete/{uuid}`
+
+To do this, if you do not have your own user, you must generate a registration from `/register`.
+
+- Then click on Authorize:
+
+    ![F2-1](https://i.ibb.co/VVjwHgd/Captura-de-pantalla-2023-12-14-a-la-s-12-07-33-p-m.png)
+
+- Enter your authentication credentials, once authenticated you will be able to use the mentioned services.
+
+    ![F2-2](https://i.ibb.co/5nNpVXh/Captura-de-pantalla-2023-12-14-a-la-s-12-34-58-p-m.png)
+
+
 ## Project Structure
 
 The current structure of the project is organized as follows:
