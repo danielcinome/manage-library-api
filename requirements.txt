@@ -6,7 +6,7 @@ cryptography==41.0.7
 passlib[bcrypt]==1.7.4
 python-multipart==0.0.6
 alembic==1.13.0
-psycopg2==2.9.9
+psycopg2-binary
 greenletio==0.11.0
 requests==2.31.0
 python-dotenv==1.0.0
