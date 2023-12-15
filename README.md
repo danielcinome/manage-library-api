@@ -6,16 +6,27 @@ Manage Library API is an application that provides services to manage an online 
 
 1. [Main Features](#main-features)
 2. [External Integrations](#external-integrations)
-2. [Installation](#installation)
-3. [How to Use](#how-to-use)
-4. [Project Structure](#project-structure)
-5. [Authors and Contact](#authors-and-contact)
+3. [Access to the Application](#access-to-the-application)
+4. [Installation](#installation)
+5. [How to Use](#how-to-use)
+6. [Project Structure](#project-structure)
+7. [Authors and Contact](#authors-and-contact)
+8. [Project Architecture](#project-architecture)
 
 ## Main Features
 - Search for books by different attributes (title, author, etc.).
 - Integration with Google Books and New York Times Book to enrich the database.
 - Creation and deletion of book records in the internal database.
 - Interactive API documentation through Swagger.
+
+## Access to the Application
+
+You can access the deployed application through the following link: [Library Management - Access to the Application](https://manage-library-api-vyej.onrender.com/docs)
+
+In addition, interactive API documentation is available at:
+
+- [Swagger UI (ReDoc)](https://manage-library-api-vyej.onrender.com/redoc): Swagger's interactive user interface.
+- [Swagger UI](https://manage-library-api-vyej.onrender.com/docs): Swagger's interactive user interface.
 
 ## External Integrations
 - Google Books API: [Documentation](https://developers.google.com/books/docs/v1/getting_started?hl=es-419)
@@ -69,6 +80,14 @@ NY_TIMES_API_KEY                # New York Times Book API
 ```bash
 alembic revision --autogenerate -m "create tables" # To generate the first migration
 alembic upgrade head
+```
+
+6. **(Optinal):**
+
+If you want to make use of docker, run the following command
+
+```bash
+docker-compose up --build
 ```
 
 ## How to Use
@@ -143,6 +162,12 @@ The current structure of the project is organized as follows:
 - **requirements.txt**: File that lists the project dependencies.
 - **README.md**: Main documentation of the project.
 - `runner.py`: File to run or start the application.
+
+## Project Architecture
+
+The project architecture is based on a backend application developed in Python using the FastAPI framework. The authentication is done through JSON Web Tokens (JWT) using OAuth2PasswordBearer. The design is oriented to provide a RESTful API that allows the management of books and users.
+
+![F2-2](https://i.ibb.co/VMLmMkS/Captura-de-pantalla-2023-12-15-a-la-s-12-12-28-a-m.png)
 
 
 ## Authors and Contact
